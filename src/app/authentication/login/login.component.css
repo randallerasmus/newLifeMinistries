@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logo {
+  margin-bottom: 16px;
+}
+
+.login-form {
+  width: 300px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.button-gap {
+  float: right!important;
+  padding-left: 30%;
+}
+
+.input-field {
+  width: 400px; /* Adjust the width as needed */
+}
+
+

@@ -1,1 +1,25 @@
-<p>login works!</p>
+<mat-card style="background-color: springgreen">
+  <div class="container">
+    <div class="logo">
+      <img src="assets/images/logo/img.png" alt="Logo" width="400px" height="300px">
+      <form class="login-form" [formGroup]="loginForm">
+        <mat-form-field appearance="outline" class="input-field">
+          <mat-label>Username</mat-label>
+          <input matInput formControlName="username" placeholder="Enter your username">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="input-field">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password" placeholder="Enter your password">
+        </mat-form-field>
+        <div class="button-container">
+          <div class="button-gap">
+            <button mat-raised-button color="primary" (click)="onCancel()">Cancel</button>
+          </div>
+          <button mat-raised-button color="primary" (click)="onLogin()">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</mat-card>
+
+
